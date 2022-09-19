@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <style media="screen">
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+    }
+
+    
+/* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+    
+  </style>
+
+</head>
+
+<body>
+
+  
+
+  {% include "main/navbar.html" %}
+  <br><br>
+  <div class="jumbotron" style="margin-bottom:0px;">
+    <div class="split left">
+      <div class="centered">
+        <img src="{% static "image/bg.jpg" %}" alt="Xyz">
+        
+      </div>
+    </div>
+    <div class="split right">
+      <div class="centered">
+         
+        
+      
+      
+      
+    
+
+    <!-- <style>
+      .bg_image {
+        width: 1000px;
+        height: 500px;
+        /* border-radius: 100px; */
+        margin-bottom: 10px;
+        background-image: image();
+      }
+    </style>
+  
+  
+    <img src="{% static "image/bg.jpg" %}" class="bg_image" alt=""> -->
+    <h1 class="display-4">Hello, Teacher</h1>
+    <p class="lead">Welcome to Scholar's Studio</p>
+    <hr class="my-4">
+    <p>You can access various features after Login.</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="teachersignup" role="button">Create Your Account</a>
+      <a class="btn btn-primary btn-lg" href="teacherlogin" role="button">Login</a>
+    </p>
+  </div>
+</div>
+    <br><br><br><br><br><br><br><br><br>
+<br>
+  </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <!-- {% include "main/footer.html" %} -->
+</body>
+
+</html>
